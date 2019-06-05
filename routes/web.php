@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','PessoaController@formulario') ;
+Route::post('/post', 'PessoaController@store');
+Route::get('/index', 'PessoaController@index');
+Route::delete('delete/{id}', 'PessoaController@destroy');
+Route::get('/edit/{id}' , 'PessoaController@edit');
+Route::put('/edit/{id}' , 'PessoaController@edit');
+Route::put('/edit/{id}' , 'PessoaController@update');
