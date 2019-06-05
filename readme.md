@@ -23,4 +23,4 @@
 
 ### Detalhes sobre a implementação
 
-* O Laravel utiliza o Eloquent na estruturação do banco de dados, as tabelas foram definidas através de migrations. A instância do banco de dados foi criada manualmente via phpmyadmin, já as tabelas estão definidas nos arquivos dentro do diretório database/migrations. Serão vistas 3 migrations dentro deste arquivo, porém apenas a migration de "Pessoas" é utilizada neste projeto, as demais são arquivos gerados automaticamente pelo Laravel. 
+* O Laravel utiliza o Eloquent na estruturação do banco de dados, as tabelas foram definidas através de migrations e são criadas após a execução do comando 'php artisan migrate'. A instância do banco de dados foi criada manualmente via phpmyadmin, já as tabelas estão definidas nos arquivos dentro do diretório database/migrations. Serão vistas 3 migrations dentro deste diretório, porém apenas a migration de "Pessoas" é utilizada neste projeto, as demais são arquivos gerados automaticamente pelo Laravel. 
